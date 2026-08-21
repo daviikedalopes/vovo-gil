@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vovô Gil | Casa de Família e Amigos</title>
+  <meta name="description" content="Vovô Gil — Casa de Família e Amigos. Buffet e à la carte em Londrina, PR. Veja o cardápio, faça seu pedido pelo WhatsApp e conheça nosso ambiente acolhedor.">
+  <meta name="theme-color" content="#10160f">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vovô Gil | Casa de Família e Amigos">
+  <meta property="og:description" content="Buffet e à la carte em um ambiente acolhedor no coração de Londrina. Confira o cardápio e faça seu pedido.">
+  <meta property="og:image" content="assets/images/logo-vovogil.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" href="assets/images/logo/favicon.png">
+
+  <!-- Fontes: Rye (display / assinatura), Fraunces (títulos), Work Sans (texto e interface) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__brand" aria-label="Vovô Gil — Início">
+        <img src="assets/images/logo/logo-vovogil.jpg" alt="Logotipo Vovô Gil — Casa de Família e Amigos" class="header__logo">
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Início</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#cardapio" class="nav__link">Cardápio</a></li>
+          <li><a href="#ambiente" class="nav__link">Ambiente</a></li>
+          <li><a href="#delivery" class="nav__link">Delivery</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="https://virtual.cardapiosecia.com/vovo-gil/" target="_blank" rel="noopener" class="btn btn--primary btn--small">Ver Cardápio</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+      <div class="hero__texture" aria-hidden="true"></div>
+      <!--
+        AVISO PARA O CLIENTE:
+        Nenhuma foto de prato ou do ambiente foi enviada até o momento.
+        Esta seção está preparada para receber uma fotografia marcante como
+        plano de fundo (ex.: uma mesa farta, um prato de destaque ou a fachada
+        do restaurante). Basta substituir a variável --hero-image no arquivo
+        css/style.css pelo caminho da imagem definitiva.
+      -->
+      <div class="hero__bg-slot" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <span class="selo selo--hero" aria-hidden="true">
+          <svg viewBox="0 0 120 120" class="selo__svg">
+            <circle cx="60" cy="60" r="56" class="selo__ring-dashed"/>
+            <circle cx="60" cy="60" r="46" class="selo__ring-solid"/>
+            <text class="selo__text-top">
+              <textPath href="#curveTop" startOffset="50%" text-anchor="middle">CASA DE FAMÍLIA</textPath>
+            </text>
+            <path id="curveTop" d="M 14,60 A 46,46 0 1,1 106,60" fill="none"/>
+            <text class="selo__text-bottom">
+              <textPath href="#curveBottom" startOffset="50%" text-anchor="middle">E AMIGOS</textPath>
+            </text>
+            <path id="curveBottom" d="M 106,60 A 46,46 0 1,1 14,60" fill="none"/>
+          </svg>
+          <img src="assets/images/logo/logo-vovogil.jpg" alt="" class="selo__logo">
+        </span>
+
+        <p class="eyebrow eyebrow--light">Restaurante em Londrina · Centro</p>
+        <h1 class="hero__title">Casa de família e amigos.<br>Lugar de gente feliz.</h1>
+        <p class="hero__subtitle">
+          Buffet farto e opções à la carte em um salão acolhedor, com música ao vivo, espaço kids para a diversão dos pequenos e aquele tempero que só uma casa de verdade tem. Venha com toda a família sentar à nossa mesa.
+        </p>
+        <div class="hero__actions">
+          <a href="https://virtual.cardapiosecia.com/vovo-gil/" target="_blank" rel="noopener" class="btn btn--primary">Ver Cardápio</a>
+          <a href="wa.me/5543999971000?text=Informa%C3%A7%C3%B5es+e+Reservas" class="btn btn--outline" data-whatsapp-link>Falar no WhatsApp</a>
+        </div>
+      </div>
+
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para a próxima seção">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ================= SOBRE ================= -->
+    <section class="about" id="sobre">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <!--
+            IMAGEM: foto do salão, da cozinha ou do(a) proprietário(a)
+            que ajude a contar a história da casa. Formato retrato recomendado
+            (proporção 4:5), boa iluminação, ambiente identificável.
+          -->
+          <img src="assets/images/locais/hero/salao-4-3.jpeg" alt="Foto do salão" class="img-placeholder img-placeholder--portrait">
+          <span class="selo selo--small selo--overlap" aria-hidden="true">
+            <svg viewBox="0 0 100 100" class="selo__svg">
+              <circle cx="50" cy="50" r="46" class="selo__ring-dashed"/>
+              <circle cx="50" cy="50" r="38" class="selo__ring-solid"/>
+            </svg>
+            <span class="selo__label">Feito<br>com<br>carinho</span>
+          </span>
+        </div>
+
+        <div class="about__text reveal">
+          <p class="eyebrow">Sobre o Vovô Gil</p>
+          <h2 class="section-title">Uma casa aberta para a família e os amigos</h2>
+          <p class="about__lead">
+            No coração de Londrina, o Vovô Gil recebe cada visitante como convidado de casa.
+            Nossa cozinha equilibra a fartura do buffet com opções à la carte preparadas
+            na hora, sempre com ingredientes frescos e o cuidado de receita de família.
+          </p>
+          <p>
+            O salão é pensado para durar a noite toda: boa companhia, música ao vivo e
+            aquele clima de reunião de família que dá vontade de voltar sempre. Seja para
+            um jantar tranquilo ou uma comemoração maior, aqui sempre cabe mais um lugar
+            na mesa.
+          </p>
+          <ul class="about__tags">
+            <li>Buffet e à la carte</li>
+            <li>Música ao vivo</li>
+            <li>Espaço Kids</li>
+            <li>Acessível para cadeirantes</li>
+            <li>Espaço para grupos e famílias</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DESTAQUES DO CARDÁPIO ================= -->
+    <section class="menu" id="cardapio">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <p class="eyebrow">Destaques do cardápio</p>
+          <h2 class="section-title">Um gostinho do que preparamos para você</h2>
+          <p class="section-subtitle">
+            Alguns dos pratos preferidos da casa. O cardápio completo, com todas as
+            opções e preços atualizados, está no nosso cardápio digital.
+          </p>
+        </div>
+
+        <div class="menu__grid">
+          <article class="dish-card reveal">
+            <div class="dish-card__media">
+              <img src="assets/images/pratos/pao-de-alho-fraldinha.png" alt="Lanche no pão de alho de fraldinha" class="img-placeholder img-placeholder--rectangular">
+              <span class="dish-card__badge">Campeão de vendas</span>
+            </div>
+            <h3 class="dish-card__title">Lanche no pão de alho de fraldinha</h3>
+            <p class="dish-card__desc">Baguete de pão de alho, pasta da casa, queijo, cebola, tomate e a fraldinha.</p>
+          </article>
+
+          <article class="dish-card reveal">
+            <div class="dish-card__media">
+              <img src="assets/images/pratos/parmegiana-alcatra.png" alt="Parmegiana de alcatra" class="img-placeholder img-placeholder--rectangular">
+            </div>
+            <h3 class="dish-card__title">Parmegiana de alcatra</h3>
+            <p class="dish-card__desc">Suculento filé de alcatra à milanesa, coberto com molho de tomate especial, muçarela e parmesão, acompanhado de arroz e batata rústica.</p>
+          </article>
+
+          <article class="dish-card reveal">
+            <div class="dish-card__media">
+              <img src="assets/images/pratos/talharim.png" alt="Talharim à bolonhesa ou molho sugo" class="img-placeholder img-placeholder--rectangular">
+            </div>
+            <h3 class="dish-card__title">Talharim à bolonhesa ou molho sugo</h3>
+            <p class="dish-card__desc">Tradicional talharim de massa leve e soltinha, servido com molho bolonhesa ou o clássico molho sugo.</p>
+          </article>
+
+          <article class="dish-card reveal">
+            <div class="dish-card__media">
+              <img src="assets/images/pratos/churrasquinho-vovo.png" alt="Churrasquinho do vovô" class="img-placeholder img-placeholder--rectangular">
+            </div>
+            <h3 class="dish-card__title">Churrasquinho do vovô</h3>
+            <p class="dish-card__desc">Uma deliciosa combinação de fraldinha, linguiça toscana e tiras de frango grelhado, acompanha pão de alho, mandioca cozida, vinagrete e farora.</p>
+          </article>
+        </div>
+
+        <div class="menu__cta reveal">
+          <a href="https://virtual.cardapiosecia.com/vovo-gil/" target="_blank" rel="noopener" class="btn btn--primary btn--large">Conheça nosso cardápio completo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AMBIENTE ================= -->
+    <section class="ambiente" id="ambiente">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow eyebrow--light">Nosso espaço</p>
+          <h2 class="section-title section-title--light">Um ambiente para ficar a noite toda</h2>
+          <p class="section-subtitle section-subtitle--light">
+            Salão amplo, mesas para grupos e famílias, espaço kids para as crianças e música ao vivo para dar o clima.
+          </p>
+        </div>
+        <div class="gallery">
+          <div class="gallery__item gallery__item--tall">
+            <img src="assets/images/locais/gallery/bar.jpeg" alt="Imagem do bar" class="img-placeholder">
+          </div>
+          <div class="gallery__item gallery__item--tall">
+            <img src="assets/images/locais/gallery/corredor.jpeg" alt="Imagem do salão da parte de fora" class="img-placeholder">
+          </div>
+          <div class="gallery__item gallery__item--tall">
+             <img src="assets/images/locais/gallery/espaco-kids.jpeg" alt="Imagem do espaço kids" class="img-placeholder">
+          </div>
+          <div class="gallery__item gallery__item--tall">
+            <img src="assets/images/locais/gallery/salao-de-fora.jpeg" alt="Imagem do salão de fora" class="img-placeholder">
+          </div>
+          <div class="gallery__item gallery__item--wide">
+            <img src="assets/images/locais/gallery/frente.jpeg" alt="Imagem da frente / fachada" class="img-placeholder">
+          </div>
+          <div class="gallery__item gallery__item--wide">
+            <img src="assets/images/locais/gallery/salao-de-dentro.jpeg" alt="Imagem do salão de dentro" class="img-placeholder">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DELIVERY / PEDIDOS ================= -->
+    <section class="delivery" id="delivery">
+      <div class="container delivery__grid">
+        <div class="delivery__text reveal">
+          <p class="eyebrow">Delivery e pedidos</p>
+          <h2 class="section-title">Bateu a fome?</h2>
+          <p class="delivery__lead">
+            Escolha seus pratos favoritos no cardápio digital e faça seu pedido de
+            forma rápida e prática, direto pelo WhatsApp.
+          </p>
+          <div class="delivery__actions">
+            <a href="https://virtual.cardapiosecia.com/vovo-gil/" target="_blank" rel="noopener" class="btn btn--primary">Ver Cardápio</a>
+            <a href="#" class="btn btn--outline-light" data-whatsapp-link>Pedir pelo WhatsApp</a>
+          </div>
+        </div>
+        <div class="delivery__media reveal">
+          <!-- IMAGEM: foto de um prato pronto para delivery/embalagem -->
+          <img src="assets/images/pratos/contra-file-brasa.png" alt="Imagem de prato delivery" class="img-placeholder img-placeholder--dark">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= QR CODE ================= -->
+    <section class="qrcode">
+      <div class="container qrcode__inner reveal">
+        <div class="qrcode__frame">
+          <img src="assets/qr-code/qr-cardapio.png" alt="QR Code para acessar o cardápio digital do Vovô Gil" class="qrcode__image" loading="lazy">
+        </div>
+        <div class="qrcode__text">
+          <p class="eyebrow">Na mesa ou em casa</p>
+          <h2 class="section-title">Aponte a câmera e acesse nosso cardápio</h2>
+          <p class="qrcode__desc">
+            Escaneie o código com a câmera do seu celular para abrir o cardápio
+            digital completo, com todos os pratos, bebidas e valores atualizados.
+          </p>
+          <a href="https://virtual.cardapiosecia.com/vovo-gil/" target="_blank" rel="noopener" class="btn btn--primary">Abrir cardápio digital</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LOCALIZAÇÃO ================= -->
+    <section class="location" id="contato">
+      <div class="container location__grid">
+        <div class="location__text reveal">
+          <p class="eyebrow eyebrow--light">Como chegar</p>
+          <h2 class="section-title section-title--light">Venha nos visitar</h2>
+
+          <div class="location__item">
+            <svg viewBox="0 0 24 24" class="location__icon"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+            <p>R. Paranaguá, 2367 — Centro, Londrina - PR, 86015-030</p>
+          </div>
+
+          <div class="location__item">
+            <svg viewBox="0 0 24 24" class="location__icon"><path d="M12 7v5l4 2M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            <div class="location__hours">
+              <p><strong>Terça e Quarta</strong> · 18h às 23h</p>
+              <p><strong>Quinta e Sexta</strong> · 18h às 00h</p>
+              <p><strong>Sábado</strong> · 11h30 às 15h30 e 19h às 00h</p>
+              <p><strong>Domingo</strong> · 11h30 às 16h</p>
+              <p><strong>Segunda</strong> · Fechado</p>
+            </div>
+          </div>
+
+          <a href="https://www.google.com/maps/dir/?api=1&destination=R.+Paranagu%C3%A1%2C+2367+-+Centro%2C+Londrina+-+PR%2C+86015-030" target="_blank" rel="noopener" class="btn btn--outline-light">Como chegar</a>
+
+          <p class="location__note">
+            Horário de funcionamento com base em informações públicas — confirme com o restaurante antes de sua visita.
+          </p>
+        </div>
+
+        <div class="location__map reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.6965423406573!2d-51.1691199!3d-23.326766499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb434f8090bf03%3A0x4964ea86ef2a4928!2zVm92w7QgR2ls!5e0!3m2!1sen!2s!4v1757511259925!5m2!1sen!2s"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de localização do Vovô Gil"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REDES SOCIAIS ================= -->
+    <section class="social">
+      <div class="container social__inner reveal">
+        <span class="selo selo--small" aria-hidden="true">
+          <svg viewBox="0 0 100 100" class="selo__svg">
+            <circle cx="50" cy="50" r="46" class="selo__ring-dashed"/>
+            <circle cx="50" cy="50" r="38" class="selo__ring-solid"/>
+          </svg>
+          <img src="assets/icons/instagram.png" alt="" class="selo__icon">
+        </span>
+        <p class="eyebrow">Siga o Vovô Gil</p>
+        <h2 class="section-title">Acompanhe o Vovô Gil no Instagram</h2>
+        <p class="social__desc">Bastidores da cozinha, novidades do cardápio e os melhores momentos da casa.</p>
+        <a href="https://www.instagram.com/vovogiloficial/" target="_blank" rel="noopener" class="btn btn--primary">
+          <img src="assets/icons/instagram.png" alt="" class="btn__icon btn__icon--white">
+          @vovogiloficial
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/images/logo/logo-vovogil.jpg" alt="Logotipo Vovô Gil" class="footer__logo">
+        <p class="footer__tagline">Casa de Família e Amigos</p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Navegação</h3>
+        <ul class="footer__links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#ambiente">Ambiente</a></li>
+          <li><a href="#delivery">Delivery</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Contato</h3>
+        <ul class="footer__links">
+          <li>R. Paranaguá, 2367 — Centro</li>
+          <li>Londrina - PR, 86015-030</li>
+          <li><a href="#" data-whatsapp-link>WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/vovogiloficial/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://virtual.cardapiosecia.com/vovo-gil/" target="_blank" rel="noopener">Cardápio digital</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__col--social">
+        <h3 class="footer__heading">Redes</h3>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/vovogiloficial/" target="_blank" rel="noopener" aria-label="Instagram do Vovô Gil" class="footer__icon-link">
+            <img src="assets/icons/instagram.png" alt="" class="footer__social-icon">
+          </a>
+          <a href="wa.me/5543999971000?text=Informa%C3%A7%C3%B5es+e+Reservas" data-whatsapp-link aria-label="WhatsApp do Vovô Gil" class="footer__icon-link">
+            <img src="assets/icons/whatsapp.png" alt="" class="footer__social-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year"></span> Vovô Gil. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante de WhatsApp -->
+  <a href="#" class="whatsapp-float" data-whatsapp-link aria-label="Falar no WhatsApp">
+    <img src="assets/icons/whatsapp.png" alt="" class="whatsapp-float__icon">
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
